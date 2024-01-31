@@ -1,0 +1,20 @@
+<ul>
+  @for (brand of brands; track brand.value) {
+  <li>
+    <label>
+      <input
+        type="checkbox"
+        [value]="brand.value"
+        [checked]="brand.isRefined"
+        (change)="toggleRefinement(brand.value)"
+      />
+      <span>
+        {{ brand.label }}
+      </span>
+      <span>
+        {{ brand.count }}
+      </span>
+    </label>
+  </li>
+  }
+</ul>
