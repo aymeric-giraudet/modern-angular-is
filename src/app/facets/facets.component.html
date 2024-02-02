@@ -18,3 +18,16 @@
   </li>
   }
 </ul>
+
+<ul>
+  @for (querySuggestion of querySuggestions; track querySuggestion) {
+  <li>
+    <a
+      (click)="$event.preventDefault(); selectQuerySuggestion(querySuggestion)"
+      href="#"
+    >
+      {{ querySuggestion }}
+    </a>
+  </li>
+  }
+</ul>

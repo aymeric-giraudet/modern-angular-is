@@ -1,13 +1,1 @@
-<main class="main">
-  <app-facets />
-  <input type="text" [value]="query" (input)="search($event)" />
-  <ul>
-    @for (hit of hits; track hit.objectId) {
-    <li>
-      {{ hit.name }}
-    </li>
-    }
-  </ul>
-</main>
-
 <router-outlet />
